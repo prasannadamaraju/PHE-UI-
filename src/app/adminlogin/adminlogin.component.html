@@ -1,0 +1,14 @@
+<div class="login-container">
+  <div class="login-box">
+      <section class="logo-section">
+          <img src='../../assets/PHEimage.jpg' placeholder='logo' alt='PHE Logo'>
+      </section>
+      <section>
+          <h5>Log in</h5>
+          <label [ngClass]='isLogin' class='text-capitalize'>{{message}}</label>
+          <input type="text" placeholder='Username' #username >
+          <input type="password" placeholder="Password" #password >
+          <button type="button" (click)='login(username,password)' class='login-button'>login</button>
+      </section>
+  </div>
+</div>
